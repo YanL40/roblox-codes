@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baú de Códigos — Códigos de jogos do Roblox</title>
+<meta name="description" content="Códigos atualizados para jogos do Roblox, começando por Anime Expeditions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="stud-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+    <span class="brand-name">Baú de Códigos</span>
+  </div>
+  <p class="brand-sub">códigos de jogos do Roblox, atualizados</p>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Destrave suas recompensas antes que o código expire.</h1>
+    <p>Escolha um jogo, toque num código para copiar e cole direto no Roblox. Simples assim.</p>
+  </section>
+
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="Buscar jogo..." aria-label="Buscar jogo">
+  </div>
+
+  <section class="game-picker" id="game-picker" aria-label="Lista de jogos">
+    <!-- os cartões de jogo são gerados pelo js/app.js a partir de js/data.js -->
+  </section>
+
+  <section class="game-detail" id="game-detail" hidden>
+    <!-- o conteúdo do jogo selecionado é gerado pelo js/app.js -->
+  </section>
+
+  <section class="empty-state" id="empty-state" hidden>
+    <p>Nenhum jogo encontrado com esse nome.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Feito para jogadores de Roblox. Códigos podem expirar a qualquer momento — volte sempre para conferir.</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
